@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 exports.up = function(knex) {    
-  return knex.schema.createTable('users', (table) => {
+  return knex.schema.createTable('userssss', (table) => {
     table.increments('id').primary();
     table.string('email').unique().notNullable();
     table.string('username');
