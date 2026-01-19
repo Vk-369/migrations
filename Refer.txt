@@ -1,0 +1,4 @@
+npm init -y
+npm install knex objection pg dotenv
+npm run migrate:make -- create_users_table
+npx knex migrate:latest
