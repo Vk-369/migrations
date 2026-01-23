@@ -3,10 +3,10 @@ exports.seed = async function(knex) {
   await knex.raw('TRUNCATE TABLE "AttendanceStudents" RESTART IDENTITY CASCADE');
 
   const batchResult = await knex.raw(`
-    INSERT INTO "AttendanceBatches" (date, class, "markedBy")
+    INSERT INTO "AttendanceBatches" (date, class, "markedBy","entityId")
     VALUES 
-      ('2026-01-23', 'cse02a', 'EMP@001'),
-      ('2026-01-23', 'cse02b', 'EMP@002')
+      ('2026-01-23', 'cse02a', 'EMP@001',1),
+      ('2026-01-23', 'cse02b', 'EMP@002',2)
     RETURNING id;
   `);
 

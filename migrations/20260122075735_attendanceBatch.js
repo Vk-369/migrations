@@ -11,6 +11,7 @@ exports.up = async function(knex) {
         "id" SERIAL PRIMARY KEY,
         "date" DATE NOT NULL,
         "class" TEXT NOT NULL,
+        "entityId" INTEGER NOT NULL,
         "markedBy" TEXT NOT NULL,
         "createdAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
         "updatedAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
