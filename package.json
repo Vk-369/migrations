@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create": "knex migrate:make",
-    "latest":"npx knex migrate:latest"
+    "latest":"npx knex migrate:latest",
+    "generateSeed":"npx knex seed:make",
+    "seedRun":"npx knex seed:run"
   },
   "keywords": [],
   "author": "",
